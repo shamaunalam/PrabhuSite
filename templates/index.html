@@ -53,16 +53,17 @@ https://www.tooplate.com/view/2117-infinite-loop
           </div>        
         </div>
       </nav>
-      
+      {% for Companydetail in Companydetails %}
       <div class="text-center tm-hero-text-container">
         <div class="tm-hero-text-container-inner">
-            <h2 class="tm-hero-title">Bholenath Enterprises <sup>&#174;</sup></h2>
+            <h2 class="tm-hero-title">{{Companydetail.CompanyName}} <sup>&#174;</sup></h2>
             <p class="tm-hero-subtitle">
-              Your Next Dream Property
-              <br>Homes | Construction | Real Estate
+              {{Companydetail.TagLine1}}
+              <br>{{Companydetail.TagLine2}}
             </p>
         </div>        
       </div>
+      {% endfor %}
 
       <div class="tm-next tm-intro-next">
         <a href="#whatwedo" class="text-center tm-down-arrow-link">
