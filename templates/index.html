@@ -1,11 +1,12 @@
 {% load static %}
+{% static 'images' as baseUrl %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Infinite Loop - Bootstrap 4.0 HTML Template</title>
+    <title>BholeNath Enterprises</title>
     <link rel="stylesheet" href="{% static 'fontawesome-5.5/css/all.min.css' %}" />
     <link rel="stylesheet" href="{% static 'slick/slick.css' %}">
     <link rel="stylesheet" href="{% static 'slick/slick-theme.css' %}">
@@ -25,10 +26,14 @@ https://www.tooplate.com/view/2117-infinite-loop
       <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">              
         <div class="container">   
           <div class="tm-next">
-              <a href="#infinite" class="navbar-brand" style="font-size:3rem;">Bholenath Enterprises</a>
+              <a href="#infinite" class="navbar-brand">Infinite Loop</a>
           </div>             
-          <div class="collapse navbar-collapse" id="navbarSupportedContent"  >
-            <ul class="navbar-nav ml-auto" style="margin-left:24%;font-size:20px;">
+            
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars navbar-toggler-icon"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
               <li class="nav-item">
                   <a class="nav-link tm-nav-link" href="#infinite">Home</a>
               </li>
@@ -51,11 +56,10 @@ https://www.tooplate.com/view/2117-infinite-loop
       
       <div class="text-center tm-hero-text-container">
         <div class="tm-hero-text-container-inner">
-          <p style="    margin-bottom: 0px; margin-left: 48%; font-size: x-large;">&#174;</p>
-            <h2 class="tm-hero-title" style="font-size: 7rem; margin-top: -25px; color: #990f0fe0">Bholenath Enterprises</h2>
-            <p class="tm-hero-subtitle" style="color:rgb(185, 184, 181); font-size:3rem;">
-              Property | Real Estate | Construction
-              <br>Buy Your Dream in Bhubaneswar
+            <h2 class="tm-hero-title">Infinite Loop</h2>
+            <p class="tm-hero-subtitle">
+              Bootstrap 4.0 Parallax Theme
+              <br>Free HTML Template by TOOPLATE
             </p>
         </div>        
       </div>
@@ -76,8 +80,7 @@ https://www.tooplate.com/view/2117-infinite-loop
                     <div class="tm-intro-text-container">
                         <h2 class="tm-text-primary mb-4 tm-section-title">What We Do</h2>
                         <p class="mb-4 tm-intro-text">
-                        {{short_description}}  
-                        </p>
+                          This is Infinite Loop, free Bootstrap 4.0 HTML template with a parallax effect. This layout is what you can modify and use for your websites. Please spread a word to your friends about our website. Thank you for supporting us. If you have any question, you can contact us or chat with us on our <a href="https://fb.com/tooplate">Tooplate Facebook page</a>.</p>
                     </div>
                 </div>
 
@@ -161,6 +164,30 @@ https://www.tooplate.com/view/2117-infinite-loop
                   <blockquote>This background image includes a semi-transparent overlay layer. This section also has a parallax image effect.</blockquote>
                   <figcaption>Catherine Win (Designer)</figcaption>
                 </figure>
+
+                <figure class="tm-testimonial-item">
+                  <img src="img/testimonial-img-02.jpg" alt="Image" class="img-fluid mx-auto">
+                  <blockquote>Testimonial section comes with carousel items. You can use Infinite Loop HTML CSS template for your websites.</blockquote>
+                  <figcaption>Dual Rocker (CEO)</figcaption>
+                </figure>
+
+                <figure class="tm-testimonial-item">
+                  <img src="img/testimonial-img-03.jpg" alt="Image" class="img-fluid mx-auto">
+                  <blockquote>Nulla finibus ligula nec tortor convallis tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus.</blockquote>
+                  <figcaption>Sandar Soft (Marketing)</figcaption>
+                </figure>
+
+                <figure class="tm-testimonial-item">
+                  <img src="img/testimonial-img-04.jpg" alt="Image" class="img-fluid mx-auto">
+                  <blockquote>Curabitur rutrum pharetra lobortis. Pellentesque vehicula, velit quis eleifend fermentum, erat arcu aliquet neque.</blockquote>
+                  <figcaption>Oliva Htoo (Designer)</figcaption>
+                </figure>
+
+                <figure class="tm-testimonial-item">
+                  <img src="img/testimonial-img-02.jpg" alt="Image" class="img-fluid mx-auto">
+                  <blockquote>Integer sit amet risus et erat imperdiet finibus. Nam lacus nunc, vulputate id ex eget, euismod auctor augue.</blockquote>
+                  <figcaption>Jacob Joker (CTO)</figcaption>
+                </figure>
               </div>
             </div>
           </div>
@@ -183,11 +210,67 @@ https://www.tooplate.com/view/2117-infinite-loop
             <div class="col-12">
                 <div class="mx-auto tm-gallery-container">
                     <div class="grid tm-gallery">
-                      <a href="{% static 'img/gallery-img-01.jpg' %}">
+                      <a href="img/gallery-img-01.jpg">
                         <figure class="effect-honey tm-gallery-item">
-                          <img src="{% static 'img/gallery-tn-01.jpg' %}" alt="Image 1" class="img-fluid">
+                          <img src="img/gallery-tn-01.jpg" alt="Image 1" class="img-fluid">
                           <figcaption>
                             <h2><i>Physical Health <span>Exercise!</span></i></h2>
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <a href="img/gallery-img-02.jpg">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="img/gallery-tn-02.jpg" alt="Image 2" class="img-fluid">
+                          <figcaption>
+                            <h2><i>Rain on Glass <span>Second Image</span></i></h2>
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <a href="img/gallery-img-03.jpg">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="img/gallery-tn-03.jpg" alt="Image 3" class="img-fluid">
+                          <figcaption>
+                            <h2><i><span>Sea View</span> Mega City</i></h2>
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <a href="img/gallery-img-04.jpg">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="img/gallery-tn-04.jpg" alt="Image 4" class="img-fluid">
+                          <figcaption>
+                            <h2><i>Dream Girl <span>Thoughts</span></i></h2>
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <a href="img/gallery-img-05.jpg">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="img/gallery-tn-05.jpg" alt="Image 5" class="img-fluid">
+                          <figcaption>
+                            <h2><i><span>Workstation</span> Offices</i></h2>
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <a href="img/gallery-img-06.jpg">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="img/gallery-tn-06.jpg" alt="Image 6" class="img-fluid">
+                          <figcaption>
+                            <h2><i>Just Above <span>The City</span></i></h2>
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <a href="img/gallery-img-01.jpg">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="img/gallery-tn-01.jpg" alt="Image 7" class="img-fluid">
+                          <figcaption>
+                            <h2><i>Another <span>Exercise Time</span></i></h2>
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <a href="img/gallery-img-02.jpg">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="img/gallery-tn-02.jpg" alt="Image 8" class="img-fluid">
+                          <figcaption>
+                            <h2><i>Repeated <span>Image Spot</span></i></h2>
                           </figcaption>
                         </figure>
                       </a>
@@ -275,6 +358,8 @@ https://www.tooplate.com/view/2117-infinite-loop
     <script src="{% static 'js/easing.min.js' %}"></script>
     <script src="{% static 'js/jquery.singlePageNav.min.js' %}"></script>     
     <script src="{% static 'js/bootstrap.min.js' %}"></script> 
+
+    
     <script>
 
       function getOffSet(){
